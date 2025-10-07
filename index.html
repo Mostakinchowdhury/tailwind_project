@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+  .header-bg {
+    background-color: #07374A;
+    transition: background-color 0.4s ease; /* smooth animation */
+  }
+</style>
+  </head>
+
+  <body class="scroll-smooth">
+
+    <!-- hero secction -->
+    <section id="hero" class="min-h-screen bg-[#25B79F] relative">
+      <!-- header part -->
+      <header class="flex justify-between items-center px-8 lg:px-32 py-3.5 fixed top-0 left-0 right-0 z-50">
+        <h1 class="invisible text-[#E9EEE4]" id="name">Sanket Bodake</h1>
+        <nav>
+          <ul class="flex items-center gap-3 md:gap-8">
+            <!-- list 1 -->
+            <li
+              class="text-sm md:text-xl text-[#E9EEE4] hover:border-b-2 hover:border-white p-1 font-semibold lg:font-normal"
+            >
+              <a href="#about"> About </a>
+            </li>
+            <!-- list 2 -->
+            <li
+              class="text-sm md:text-xl text-[#E9EEE4] hover:border-b-2 hover:border-white p-1 font-semibold lg:font-normal"
+            >
+              <a href="#portfolio"> Portfolio </a>
+            </li>
+            <!-- list 3 -->
+            <li
+              class="text-sm md:text-xl text-[#E9EEE4] hover:border-b-2 hover:border-white p-1 font-semibold lg:font-normal"
+            >
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- middle part -->
+      <div
+        class="mx-auto w-fit text-center absolute top-[47%] left-[50%] -translate-x-1/2 -translate-y-1/2"
+      >
+        <h3 class="font-light text-4xl text-[#07374a]">Hi, I'm Sanket</h3>
+        <p class="font-normal text-2xl text-[#f0f0e6]">A Web Developer in training.</p>
+      </div>
+      <!-- downicon part -->
+      <div class="angle-down-icon cursor-pointer ctrl">
+        <a href="#about"><i class="fas fa-angle-down"></i></a>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="bg-[#07374a] py-[6rem] min-h-screen">
+      <div class="container space-y-12 flex flex-col lg:flex-row p-6 lg:px-32">
+        <!-- about me -->
+        <div class="flex flex-col lg:basis-1/2 basis-full">
+          <h2 class="text-[#25b79f] text-[2rem] font-semibold text-center">About Me</h2>
+          <img src="/avatar.png" alt="" class="h-[200px] w-[150px] object-cover rounded-full" />
+          <p class="text-[1.2rem] text-[#f0f0e6] px-[2.3rem] text-center">
+            I am 16 year old, BBA-CA student studied at Pratibha College of Commerce and Computer
+            studies. I really enjoy solving problems as well as making things pretty and easy to
+            use. I can't stop learning new things; the more, the better.
+          </p>
+        </div>
+        <!-- skills div -->
+        <div class="flex flex-col lg:basis-1/2 basis-full">
+          <h2 class="text-[#25b79f] text-[2rem] font-semibold text-center">My Skills</h2>
+          <!-- progressbars -->
+          <div class="my-[25px] space-y-3" id="progresscontainer">
+            <!-- html info -->
+            <div class="mb-[8px] text-[#f0f0e6] rounded-[10px]">
+              <span class="text-[1rem] font-medium"> HTML </span>
+              <div class="bg-white w-full h-2.5 p-0 m-0 rounded-[10px] my-3 relative">
+                <span
+                  data-label="80"
+                  class="progress80 progress rounded-[10px] h-2.5 m-0 p-0 relative after:absolute after:content-['80%'] after:bg-[#F0F0F0] after:text-[#07374A] after:px-2 after:py-[1px] after:text-[12px] after:font-bold after:rounded-[3px] after:right-0 after:top-[-28px] before:content-[''] before:absolute before:size-0 before:right-0 before:top-[-12px] before:border-[7px] before:border-b-0 before:border-r-0 before:border-transparent before:border-t-[#f0f0f0]"
+                ></span>
+              </div>
+            </div>
+            <div class="mb-[8px] text-[#f0f0e6]">
+              <span class="text-[1rem] font-medium"> CSS </span>
+              <div class="bg-white w-full h-2.5 p-0 m-0 rounded-[10px] my-3 relative">
+                <span
+                data-label="70"
+                  class="progress70 progress rounded-[10px] h-2.5 m-0 p-0 relative after:absolute after:content-['70%'] after:bg-[#F0F0F0] after:text-[#07374A] after:px-2 after:py-[1px] after:text-[12px] after:font-bold after:rounded-[3px] after:right-0 after:top-[-28px] before:content-[''] before:absolute before:size-0 before:right-0 before:top-[-12px] before:border-[7px] before:border-b-0 before:border-r-0 before:border-transparent before:border-t-[#f0f0f0]"
+                ></span>
+              </div>
+            </div>
+            <div class="mb-[8px] text-[#f0f0e6]">
+              <span class="text-[1rem] font-medium"> BOOTSTRAP </span>
+              <div class="bg-white w-full h-2.5 p-0 m-0 rounded-[10px] my-3 relative">
+                <span
+                data-label="50"
+                  class="progress50 progress rounded-[10px] h-2.5 m-0 p-0 relative after:absolute after:content-['50%'] after:bg-[#F0F0F0] after:text-[#07374A] after:px-2 after:py-[1px] after:text-[12px] after:font-bold after:rounded-[3px] after:right-0 after:top-[-28px] before:content-[''] before:absolute before:size-0 before:right-0 before:top-[-12px] before:border-[7px] before:border-b-0 before:border-r-0 before:border-transparent before:border-t-[#f0f0f0]"
+                ></span>
+              </div>
+            </div>
+            <div class="mb-[8px] text-[#f0f0e6]">
+              <span class="text-[1rem] font-medium"> JAVASCRIPT </span>
+              <div class="bg-white w-full h-2.5 p-0 m-0 rounded-[10px] my-3 relative">
+                <span
+                data-label="50"
+                  class="progress50 progress rounded-[10px] h-2.5 m-0 p-0 relative after:absolute after:content-['50%'] after:bg-[#F0F0F0] after:text-[#07374A] after:px-2 after:py-[1px] after:text-[12px] after:font-bold after:rounded-[3px] after:right-0 after:top-[-28px] before:content-[''] before:absolute before:size-0 before:right-0 before:top-[-12px] before:border-[7px] before:border-b-0 before:border-r-0 before:border-transparent before:border-t-[#f0f0f0]"
+                ></span>
+              </div>
+            </div>
+            <div class="mb-[8px] text-[#f0f0e6]">
+              <span class="text-[1rem] font-medium"> C Programming </span>
+              <div class="bg-white w-full h-2.5 p-0 m-0 rounded-[10px] my-3 relative">
+                <span
+                 data-label="50"
+                  class="progress50 progress rounded-[10px] h-2.5 m-0 p-0 relative after:absolute after:content-['50%'] after:bg-[#F0F0F0] after:text-[#07374A] after:px-2 after:py-[1px] after:text-[12px] after:font-bold after:rounded-[3px] after:right-0 after:top-[-28px] before:content-[''] before:absolute before:size-0 before:right-0 before:top-[-12px] before:border-[7px] before:border-b-0 before:border-r-0 before:border-transparent before:border-t-[#f0f0f0]"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+      </div>
+      <p>
+        <a
+          href="#portfolio"
+          class="text-[1.3rem] text-[#25b79f] block text-center lg:text-left lg:pl-82 p-4"
+        >
+          Check out my work
+        </a>
+      </p>
+    </section>
+<!-- hudai -->
+    <p class="hidden progress0 transition-all duration-200"></p>
+    <!-- port folio section -->
+
+    <section class="min-h-screen bg-[#25B79F] py-4 lg:py-22">
+      <!-- container -->
+
+      <div class="container2 flex flex-col justify-between px-3 lg:px-46 gap-5">
+        <!-- portfolio 1 -->
+        <div class="flex flex-col lg:items-start items-center gap-3">
+          <h2 class="text-center font-bold my-[3rem]  w-full text-[2.3rem] text-[#07374a]">Portfolio</h2>
+          <div class="flex flex-col lg:flex-row items-center gap-8">
+            <div>
+              <img
+                src="https://i.postimg.cc/qM9TjGTG/Screenshot-80.png"
+                alt="proj1"
+                class="h-[240px] w-[290px] lg:w-[390px] lg:h-[340px] object-cover rounded-full"
+                style="box-shadow: 0 20px 10px -10px rgb(37 41 52 / 31%)"
+              />
+            </div>
+            <div>
+              <h2 class="text-[2rem] lg:text-[2rem] text-[#07374a]">Restaurant Website UI</h2>
+              <p class="font-semibold text-[#07374a] text-[1.3rem] lg:text-[1.8rem]">
+                Build Using HTML,CSS,JS
+              </p>
+              <div>
+                <button
+                  class="bg-[#f0f0e6] p-[0.5rem] mt-[0.5rem] w-150px border-0 border-b-2 border-[#07374a]"
+                >
+                  <a
+                    href="#"
+                    class="text-[#07374a] text-[1.1rem] transition-all duration-200 ease-in-out text-center"
+                    >View source</a
+                  >
+                </button>
+                <button
+                  class="bg-[#f0f0e6] p-[0.5rem] mt-[0.5rem] w-150px border-0 border-b-2 border-[#07374a]"
+                >
+                  <a
+                    href="#"
+                    class="text-[#07374a] text-[1.1rem] transition-all duration-200 ease-in-out text-center"
+                    >View source</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- portfolio 2 -->
+        <div class="flex flex-col lg:items-start items-center gap-3">
+          <div class="flex flex-col lg:flex-row items-center gap-8">
+            <div>
+              <img
+                src="https://i.postimg.cc/FR848bSm/Screenshot-76.png"
+                alt="proj1"
+                class="h-[240px] w-[290px] lg:w-[390px] lg:h-[340px] object-cover rounded-full"
+                style="box-shadow: 0 20px 10px -10px rgb(37 41 52 / 31%)"
+              />
+            </div>
+            <div>
+              <h2 class="text-[2rem] lg:text-[2rem] text-[#07374a]">Profile Card</h2>
+              <p class="font-semibold text-[#07374a] text-[1.3rem] lg:text-[1.8rem]">
+                Build Using HTML,CSS,JS
+              </p>
+              <div>
+                <button
+                  class="bg-[#f0f0e6] p-[0.5rem] mt-[0.5rem] w-150px border-0 border-b-2 border-[#07374a]"
+                >
+                  <a
+                    href="#"
+                    class="text-[#07374a] text-[1.1rem] transition-all duration-200 ease-in-out text-center"
+                    >View source</a
+                  >
+                </button>
+                <button
+                  class="bg-[#f0f0e6] p-[0.5rem] mt-[0.5rem] w-150px border-0 border-b-2 border-[#07374a]"
+                >
+                  <a
+                    href="#"
+                    class="text-[#07374a] text-[1.1rem] transition-all duration-200 ease-in-out text-center"
+                    >View source</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contat me section  -->
+    <section
+      class="bg-[#07374A] text-center min-h-screen flex justify-center items-center"
+      id="contact"
+    >
+      <div class="flex justify-center items-center flex-col">
+        <!-- main div -->
+        <h3 class="text-[2.5rem] text-[#25b79f] pb-2 font-normal">Contact Me</h3>
+        <p class="text-[#f0f0e6] pb-1 text-[1rem]">Get in touch with me sanketbodke26@gmail.com</p>
+        <p class="text-[#25b79f] p-2 pb-7 text-lg">Or find me on:</p>
+        <ul class="flex items-center gap-3">
+          <li>
+            <a href="#" class="text-[#25b79f] p-2 transition-all duration-300 ease-in-out"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-[#25b79f] p-2 transition-all duration-300 ease-in-out"
+              >Codepen</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-[#25b79f] p-2 transition-all duration-300 ease-in-out"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-[#25b79f] p-2 transition-all duration-300 ease-in-out"
+              >Dev Commuinity</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-[#25b79f] p-2 transition-all duration-300 ease-in-out"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-[#25b79f] p-2 transition-all duration-300 ease-in-out"
+              >Instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="js.js"></script>
+  </body>
+</html>
